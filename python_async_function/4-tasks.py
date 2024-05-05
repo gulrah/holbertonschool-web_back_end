@@ -8,6 +8,7 @@ from asyncio import Task
 
 task_wait_random = __import__('0-basic_async_syntax').wait_random
 
+
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     Asynchronous function that spawns wait_random n times

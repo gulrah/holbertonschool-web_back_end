@@ -8,7 +8,6 @@ def list_all(mongo_collection):
     """
     Retrieve all documents from the provided MongoDB collection.
     """
-    result = mongo_collection.school.find()
-    if result:
-        return result
-    return []
+    if not mongo_collection:
+        return []
+    return list(mongo_collection.find())

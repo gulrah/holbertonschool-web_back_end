@@ -3,10 +3,10 @@ export default class HolbertonCourse {
     if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
       throw TypeError('Attributes must have valid types');
     }
-      this._name = name;
-      this._length = length;
-      this._students = students;
-    }
+    this._name = name;
+    this._length = length;
+    this._students = students;
+  }
 
   get name() {
     return this._name;
